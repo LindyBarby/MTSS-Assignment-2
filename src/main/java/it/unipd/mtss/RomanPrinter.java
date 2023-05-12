@@ -15,6 +15,6 @@ public final class RomanPrinter {
     }
     private static String printAsciiArt(String romanNumber){
         //TODO
-        return "";
+        return romanNumber;
     }
 }
