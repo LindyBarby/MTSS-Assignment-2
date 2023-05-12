@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 public class RomanPrinterTest {
   @Test
-  public void testConvertNegativeNumber() {
+  public void TestConvertNegativeNumber() {
     try{
         IntegerToRoman.convert(-1);
     }
@@ -17,7 +17,7 @@ public class RomanPrinterTest {
     }
   }
   @Test
-  public void testAsciiPrintNegativeNumber() {
+  public void TestAsciiPrintNegativeNumber() {
     try{
         RomanPrinter.print(-1);
     }
@@ -25,20 +25,9 @@ public class RomanPrinterTest {
         assertEquals("Invalid number to convert", e.getMessage());
     }
   }
-  @Test
-  public void testAsciiPrint3Number() {
-    try{
-        for(int i=1; i<=3; i++){
-          RomanPrinter.print(i);
-        }
-    }
-    catch(IntegerToRomanException e){
-        assertEquals("Invalid number to convert", e.getMessage());
-    }
-  }
 
   @Test
-  public void testConvert3Number() {
+  public void TestConvert3Number() {
     try{
         for(int i=1; i<=3; i++){
           System.out.println(IntegerToRoman.convert(i));
@@ -50,7 +39,7 @@ public class RomanPrinterTest {
   }
 
   @Test
-  public void testConvert6Number() {
+  public void TestConvert6Number() {
     try{
         for(int i=1; i<=6; i++){
           System.out.println(IntegerToRoman.convert(i));
@@ -62,7 +51,7 @@ public class RomanPrinterTest {
   }
 
   @Test
-  public void testConvert10Number() {
+  public void TestConvert10Number() {
     try{
         for(int i=1; i<=10; i++){
           System.out.println(IntegerToRoman.convert(i));
@@ -74,7 +63,7 @@ public class RomanPrinterTest {
   }
 
   @Test
-  public void testConvert20Number() {
+  public void TestConvert20Number() {
     try{
         for(int i=1; i<=20; i++){
           System.out.println(IntegerToRoman.convert(i));
@@ -86,7 +75,7 @@ public class RomanPrinterTest {
   }
 
   @Test
-  public void testConvert50Number() {
+  public void TestConvert50Number() {
     try{
         for(int i=1; i<=50; i++){
           System.out.println(IntegerToRoman.convert(i));
@@ -98,7 +87,7 @@ public class RomanPrinterTest {
   }
 
   @Test
-  public void testConvert100Number() {
+  public void TestConvert100Number() {
     try{
         for(int i=1; i<=100; i++){
           System.out.println(IntegerToRoman.convert(i));
@@ -110,7 +99,7 @@ public class RomanPrinterTest {
   }
 
   @Test
-  public void testConvert500Number() {
+  public void TestConvert500Number() {
     try{
         for(int i=1; i<=500; i++){
           System.out.println(IntegerToRoman.convert(i));
@@ -122,10 +111,106 @@ public class RomanPrinterTest {
   }
 
   @Test
-  public void testConvert1000Number() {
+  public void TestConvert1000Number() {
     try{
         for(int i=1; i<=1000; i++){
           System.out.println(IntegerToRoman.convert(i));
+        }
+    }
+    catch(IntegerToRomanException e){
+        assertEquals("Invalid number to convert", e.getMessage());
+    }
+  }
+
+  @Test
+  public void TestAsciiPrint3Number() {
+    try{
+        for(int i=1; i<=3; i++){
+          System.out.println(RomanPrinter.print(i));
+        }
+    }
+    catch(IntegerToRomanException e){
+        assertEquals("Invalid number to convert", e.getMessage());
+    }
+  }
+
+  @Test
+  public void TestAsciiPrint6Number() {
+    try{
+        for(int i=1; i<=6; i++){
+          System.out.println(RomanPrinter.print(i));
+        }
+    }
+    catch(IntegerToRomanException e){
+        assertEquals("Invalid number to convert", e.getMessage());
+    }
+  }
+
+  @Test
+  public void TestAsciiPrint10Number() {
+    try{
+        for(int i=1; i<=10; i++){
+          System.out.println(RomanPrinter.print(i));
+        }
+    }
+    catch(IntegerToRomanException e){
+        assertEquals("Invalid number to convert", e.getMessage());
+    }
+  }
+
+  @Test
+  public void TestAsciiPrint20Number() {
+    try{
+        for(int i=1; i<=20; i++){
+          System.out.println(RomanPrinter.print(i));
+        }
+    }
+    catch(IntegerToRomanException e){
+        assertEquals("Invalid number to convert", e.getMessage());
+    }
+  }
+
+  @Test
+  public void TestAsciiPrint50Number() {
+    try{
+        for(int i=1; i<=50; i++){
+          System.out.println(RomanPrinter.print(i));
+        }
+    }
+    catch(IntegerToRomanException e){
+        assertEquals("Invalid number to convert", e.getMessage());
+    }
+  }
+
+  @Test
+  public void TestAsciiPrint100Number() {
+    try{
+        for(int i=1; i<=100; i++){
+          System.out.println(RomanPrinter.print(i));
+        }
+    }
+    catch(IntegerToRomanException e){
+        assertEquals("Invalid number to convert", e.getMessage());
+    }
+  }
+
+  @Test
+  public void TestAsciiPrint500Number() {
+    try{
+        for(int i=1; i<=500; i++){
+          System.out.println(RomanPrinter.print(i));
+        }
+    }
+    catch(IntegerToRomanException e){
+        assertEquals("Invalid number to convert", e.getMessage());
+    }
+  }
+
+  @Test
+  public void TestAsciiPrint1000Number() {
+    try{
+        for(int i=1; i<=1000; i++){
+          System.out.println(RomanPrinter.print(i));
         }
     }
     catch(IntegerToRomanException e){
