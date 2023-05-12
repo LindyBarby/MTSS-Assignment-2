@@ -25,4 +25,15 @@ public class RomanPrinterTest {
         assertEquals("Invalid number to convert", e.getMessage());
     }
   }
+  @Test
+  public void testAsciiPrint3Number() {
+    try{
+        for(int i=0; i<3; i++){
+          RomanPrinter.print(i);
+        }
+    }
+    catch(IntegerToRomanException e){
+        assertEquals("Invalid number to convert", e.getMessage());
+    }
+  }
 }

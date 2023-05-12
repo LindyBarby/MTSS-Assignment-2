@@ -15,6 +15,6 @@ public final class IntegerToRoman {
             throw new IntegerToRomanException("Invalid number to convert");
         }
         // TODO
-        return null;
+        return "";
     }
 }
